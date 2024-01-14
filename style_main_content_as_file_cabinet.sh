@@ -1,3 +1,10 @@
+#!/bin/bash
+
+# Navigate to the styles directory
+cd src/styles
+
+# Update main.css to style the main content area
+cat <<EOT > main.css
 .main-content {
   background-color: #f3e5ab; /* Matching the file folder color */
   padding: 20px;
@@ -18,3 +25,10 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 10;
 }
+EOT
+
+# Navigate back to the root of the project
+cd ../../
+
+# End of script
+echo "Main content CSS updated for file cabinet folder illusion."

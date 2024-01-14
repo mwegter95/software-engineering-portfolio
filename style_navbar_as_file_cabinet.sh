@@ -1,3 +1,10 @@
+#!/bin/bash
+
+# Navigate to the styles directory
+cd src/styles
+
+# Update navbar.css to resemble file cabinet folders
+cat <<EOT > navbar.css
 .navbar {
   background-color: #e8dcb9; /* Manila folder color */
   display: flex;
@@ -21,3 +28,10 @@
   background-color: #e8dcb9; /* Manila color on hover/active */
   box-shadow: 0 -3px 7px rgba(0,0,0,0.3) inset, 0 2px 4px rgba(0,0,0,0.2); /* Deeper shadow on hover/active */
 }
+EOT
+
+# Navigate back to the root of the project
+cd ../../
+
+# End of script
+echo "Navbar CSS updated to resemble file cabinet folders."
