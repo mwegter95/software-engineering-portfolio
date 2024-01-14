@@ -1,8 +1,8 @@
 import React from 'react';
-// import '../styles/navbar.css';
-interface Props {
-  title: string;
-}
+import '../styles/navbar.css';
+// interface Props {
+//   title: string;
+// }
 // Easiest way to declare a Function Component; return type is inferred.
 const Navbar = () => 
     <nav className="navbar">

@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #f4f4f4; /* File folder color */
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add shadow for depth */
+}
+
+.nav-item {
+  background-color: #e0e0e0; /* Slightly darker for contrast */
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 300ms;
+  border-radius: 5px; /* Rounded corners for tabs */
+}
+
+.nav-item:hover, .nav-item.active {
+  background-color: #c0c0c0; /* Darker on hover or active */
+  color: blue; /* Mimicking blue pen for active tab */
+}
